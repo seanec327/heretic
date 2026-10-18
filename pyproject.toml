@@ -45,9 +45,13 @@ dependencies = [
 
 [dependency-groups]
 dev = [
+    "pytest>=8.4",
     "ruff>=0.16.9",
     "ty>=0.0.84",
 ]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
 
 [project.urls]
 Homepage = "https://heretic-project.org"
